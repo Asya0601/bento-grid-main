@@ -1,0 +1,150 @@
+@font-face{
+    font-family: 'DM Sans';
+    src: url(assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'DM Sans';
+    src: url(assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Reset settings */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-overflow: balance;
+}
+
+/* Variables area */
+
+:root{
+/* Colors */
+    --purpleight: hsl(254, 88%, 90%);
+    --purpleDark: hsl(256, 67%, 59%);
+
+    --yellowLight: hsl(31, 66%, 93%);
+    --yellowDark: hsl(39, 100%, 71%);
+
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 95%);
+    --black: hsl(0, 0%, 7%);
+}
+
+/* Global styling area */
+html{
+    font-family: 'DM Sans';
+    font-size: 18px;
+}
+
+h1{
+    font-size: 5vh;
+    font-weight: 500;
+
+    letter-spacing: 0.1rem;
+    line-height: 5vh;
+}
+
+h2{
+    font-size: 3vh;
+    font-weight: 500;
+
+    line-height: 2.8vh;
+}
+
+p{
+    font-size: 2vh;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Local styling area */
+
+body{
+    background-color: var(--gray);
+}
+
+.main{
+    width: 100%;
+    margin-block: 2vh;
+
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.main_section{
+    width: 90%;
+
+    margin-block: 1rem;
+
+    background-color: var(--purpleDark);
+
+    border-radius: 0.5rem;
+}
+
+        /* First box */
+
+.main_section:nth-of-type(1){
+    background-color: var(--purpleDark);
+
+    padding: 2.4rem;
+
+    text-align: center;
+}
+
+.main_section:nth-of-type(1) h1{
+    color: var(--white);
+
+    margin-bottom: 0.8rem;
+}
+
+.main_section_h1:nth-of-type(1) span{
+    color: var(--yellowDark);
+
+    margin-bottom: 1rem;
+}
+
+.main_section:nth-of-type(1) p{
+    color: var(--purpleight);
+}
+
+.firstBoxImg{
+    width: 20vh;
+    margin-inline: auto;
+}
+
+        /* Second box */
+
+.main_section:nth-of-type(2){
+    background-color: var(--white);
+
+    padding: 1rem;
+}
+
+.secondBoxImg{
+    border-radius: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+.attribution{
+    display: none;
+}
+
+/* Adaptive area */
+
+@media (min-width:600px){
+
+}

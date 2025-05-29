@@ -146,6 +146,10 @@ body{
     overflow: hidden;
 }
 
+.main_section:nth-of-type(3) h1{
+    width: 80%;
+}
+
 .thirdBoxImg{
     width: 26vh;
 
